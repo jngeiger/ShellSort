@@ -1,11 +1,10 @@
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShellSort<T extends Comparable<T>> {
         public static void main (String[] args) throws IOException
-        {
-        }
+        { }
         public void insertionSort(List<T> list)
         {
             for (int i = 1; i < list.size(); i++)
@@ -41,7 +40,6 @@ public class ShellSort<T extends Comparable<T>> {
             sequence = getPrattSequence(list.size());
             for (int i = sequence.size()-1; i >= 0; i--)
             {
-                System.out.println(sequence.get(i));
                 shellInsertion(list,sequence.get(i));
             }
         }
